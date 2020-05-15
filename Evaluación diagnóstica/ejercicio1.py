@@ -12,5 +12,5 @@ año_5 = round(cantidad_dinero*INTERES*5)
 
 # Salidas
 
-print('Dinero generado al año 1: ${0}\nDinero generado al año 2: ${1}\nDinero generado al año 3: ${2}'
+print('Dinero generado al año 1: ${0}\nDinero generado al año 3: ${1}\nDinero generado al año 5: ${2}'
         .format(año_1, año_3, año_5))
