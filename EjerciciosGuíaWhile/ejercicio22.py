@@ -29,14 +29,14 @@ while numero != FIN:
     cont = 0
     while cont < 3:
         digito = numeroAux % 10
-
+        print(numeroRomano)
         # Implementamos el patrón de formación de números romanos
         if digito < 4:
             numeroRomano = UNO*digito + numeroRomano
         elif digito == 4:
-            numeroRomano = UNO+CINCO + numeroRomano
+            numeroRomano = UNO+CINCO + numeroRomano # Aquí el error, puse el operador += en vez de =
         elif digito == 5:
-            numeroRomano += CINCO + numeroRomano
+            numeroRomano = CINCO + numeroRomano
         elif digito > 5 and digito < 9:
             numeroRomano = CINCO+UNO*(digito-5) + numeroRomano
         elif digito == 9:
